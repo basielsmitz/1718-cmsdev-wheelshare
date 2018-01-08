@@ -1,0 +1,56 @@
+.listOfVehicles{
+  .vehicleItem:first-of-type {
+    margin: 0 0 1rem 0;
+  }
+  .vehicleItem {
+    margin: 1rem 0 1rem 0;
+    height: 200px;
+    position: relative;
+
+    .vehicleContainer {
+      height: 100%;
+      position: relative;
+      .itemOverlay{
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: $black-transparent;
+        .top {
+          position: absolute;
+          display: block;
+          width: 100%;
+          .left {
+            float:left;
+          }
+          .right {
+            float:right;
+          }
+
+        }
+        .bottom {
+          position: absolute;
+          display: block;
+          width: 100%;
+          bottom: 0;
+
+        }
+      }
+
+    }
+  }
+}
+
+@media #{$small} {
+  body {
+    background-color: blue;
+  }}
+@media #{$mid} {
+  body {
+    background-color: green;
+  }}
+@media #{$large} {
+  body {
+    background-color: orange;
+  }}

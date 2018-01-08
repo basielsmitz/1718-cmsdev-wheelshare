@@ -1,0 +1,35 @@
+<template>
+    <div class="Supplier">
+        <div class="header">
+            <static-header :title="pageTitle"></static-header>
+
+            <div class="dynamic">
+
+            </div>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</template>
+
+<script>
+    import StaticHeader from "../partials/StaticHeader.vue"
+
+    export default {
+        name: 'Supplier',
+        components: {
+            'static-header': StaticHeader,
+        },
+        data() {
+            return {
+                pageTitle: 'Aanbieder'
+            }
+        }
+    }
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+
+</style>

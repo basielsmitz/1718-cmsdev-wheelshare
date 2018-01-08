@@ -1,0 +1,52 @@
+.dynamic {
+
+  .provider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 1rem 1rem 1rem;
+
+    .left {
+      display: inline-block;
+      float:left;
+      p {
+        color: $white;
+      }
+    }
+    .right {
+      display: inline-block;
+      float:right;
+    }
+  }
+}
+.informationList {
+  .informationItem {
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: solid 1px $primary;
+    .left{
+      display: inline-block;
+    }
+    .right {
+      display:inline-block;
+      float:right;
+      color: $primary;
+
+    }
+
+  }
+}
+
+@media #{$small} {
+  body {
+    background-color: blue;
+  }}
+@media #{$mid} {
+  body {
+    background-color: green;
+  }}
+@media #{$large} {
+  body {
+    background-color: orange;
+  }}

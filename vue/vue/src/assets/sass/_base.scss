@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  font-family: $font-sub;
+  font-size: 14pt;
+  color: $black;
+  background-color: $white;
+}
+h1, h2, h3, h4 {
+  font-family: $font-main;
+}
+p, a {
+  font-size: 14pt;
+  color: $black;
+  font-family: $font-sub;
+}
+a {
+  color: $accent;
+  text-decoration: none;
+}
+.content {
+  .container {
+    margin: 1rem 2rem 2rem 2rem;
+  }
+}
+@media #{$small} {
+  body {
+    background-color: blue;
+  }}
+@media #{$mid} {
+  body {
+    background-color: green;
+  }}
+@media #{$large} {
+  body {
+    background-color: orange;
+  }}

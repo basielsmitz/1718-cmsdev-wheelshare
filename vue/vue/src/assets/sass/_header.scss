@@ -1,0 +1,76 @@
+.header {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: $black;
+  position:relative;
+  background-size: cover;
+  height: 180px;
+  color: $white;
+  .overlay {
+    background-color: $black-transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .static {
+    .hamburger, h1, .nav {
+      display: inline-block;
+      font-size: 18pt;
+    }
+    .hamburger {
+      cursor: pointer;
+
+    }
+    h1 {
+      padding-left: 1rem;
+
+    }
+    nav {
+      z-index: 999;
+      display: none;
+      background-color: $black;
+      position: fixed;
+      top:0;
+      left:0;
+      width: 60%;
+      height: 100%;
+      //display: block;
+      .close {
+        cursor: pointer;
+        padding: 1rem 1rem;
+        font-size: 18pt;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+          border-bottom: 2px solid $primary;
+          a {
+            display: block;
+            padding: 1rem 2rem 1rem 2rem;
+            color: $white;
+          }
+        }
+
+        li:first-of-type{
+          border-top: 2px solid $primary;
+          margin-top: 10rem;
+        }
+        li:hover {
+          a {
+            color: $black;
+            background-color: $secondary;
+          }
+        }
+
+      }
+
+    }
+    .navActive {
+      display: block;
+    }
+  }
+}
