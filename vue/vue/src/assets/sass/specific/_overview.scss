@@ -10,7 +10,10 @@
     .vehicleContainer {
       height: 100%;
       position: relative;
+      background-size: cover !important;
+      background-position: 30%!important;
       .itemOverlay{
+        color: $white;
         position: absolute;
         top:0;
         bottom:0;
@@ -21,11 +24,14 @@
           position: absolute;
           display: block;
           width: 100%;
+          top:0.5rem;
           .left {
             float:left;
+            margin-left: 1rem
           }
           .right {
             float:right;
+            margin-right: 1rem
           }
 
         }
@@ -33,7 +39,8 @@
           position: absolute;
           display: block;
           width: 100%;
-          bottom: 0;
+          bottom: 0.5rem;
+          margin-left: 1rem;
 
         }
       }

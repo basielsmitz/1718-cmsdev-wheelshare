@@ -25,10 +25,10 @@ export default new Router({
       name: 'Overview',
       component: Overview
     },{
-      path: '/overzicht',
-      name: 'Overview',
-      component: Overview
-    },{
+    //   path: '/overzicht',
+    //   name: 'Overview',
+    //   component: Overview
+    // },{
       path: '/overzicht/wagen/:vehicleId/',
       name: 'Vehicle',
       component: Vehicle
@@ -61,7 +61,7 @@ export default new Router({
       name: 'SupplierOverview',
       component: SupplierOverview
     },{
-      path: '/aanbieder/:supplierId/overzicht/wagen',
+      path: '/aanbieder/:supplierId/overzicht/:vehicleId',
       name: 'SupplierVehicle',
       component: SupplierVehicle
     },{
@@ -69,7 +69,7 @@ export default new Router({
       name: 'NewVehicle',
       component: NewVehicle
     },{
-      path: '/aanbieder/:supplierId/overzicht/detail',
+      path: '/aanbieder/:supplierId/overzicht/:vehicleId/edit',
       name: 'VehicleEdit',
       component: VehicleEdit
     },{

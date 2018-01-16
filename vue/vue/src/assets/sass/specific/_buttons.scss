@@ -1,0 +1,35 @@
+.mainButton {
+  height: 50px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: $secondary;
+  color: $white;
+  margin-top: 1rem;
+  //position: absolute;
+  //bottom: 0;
+}
+a.secondaryButtonLink{
+  display: block;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+  .secondaryButton{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: $secondary;
+    color: $white;
+    text-align: center;
+  }
+}
+
+@media #{$small} {
+  body {
+    background-color: blue;
+  }}
+@media #{$mid} {
+  body {
+    background-color: green;
+  }}
+@media #{$large} {
+  body {
+    background-color: orange;
+  }}

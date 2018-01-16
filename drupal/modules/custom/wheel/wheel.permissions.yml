@@ -1,0 +1,57 @@
+add vehicle entities:
+  title: 'Create new Vehicle entities'
+
+administer vehicle entities:
+  title: 'Administer Vehicle entities'
+  description: 'Allow to access the administration form to configure Vehicle entities.'
+  restrict access: true
+
+delete vehicle entities:
+  title: 'Delete Vehicle entities'
+
+edit vehicle entities:
+  title: 'Edit Vehicle entities'
+
+view published vehicle entities:
+  title: 'View published Vehicle entities'
+
+view unpublished vehicle entities:
+  title: 'View unpublished Vehicle entities'
+add reservation entities:
+  title: 'Create new Reservation entities'
+
+administer reservation entities:
+  title: 'Administer Reservation entities'
+  description: 'Allow to access the administration form to configure Reservation entities.'
+  restrict access: true
+
+delete reservation entities:
+  title: 'Delete Reservation entities'
+
+edit reservation entities:
+  title: 'Edit Reservation entities'
+
+view published reservation entities:
+  title: 'View published Reservation entities'
+
+view unpublished reservation entities:
+  title: 'View unpublished Reservation entities'
+add supplier entities:
+  title: 'Create new Supplier entities'
+
+administer supplier entities:
+  title: 'Administer Supplier entities'
+  description: 'Allow to access the administration form to configure Supplier entities.'
+  restrict access: true
+
+delete supplier entities:
+  title: 'Delete Supplier entities'
+
+edit supplier entities:
+  title: 'Edit Supplier entities'
+
+view published supplier entities:
+  title: 'View published Supplier entities'
+
+view unpublished supplier entities:
+  title: 'View unpublished Supplier entities'

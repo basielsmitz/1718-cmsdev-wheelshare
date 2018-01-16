@@ -1,0 +1,66 @@
+# Vehicle routing definition
+vehicle.settings_tab:
+  route_name: vehicle.settings
+  title: 'Settings'
+  base_route: vehicle.settings
+
+entity.vehicle.canonical:
+  route_name: entity.vehicle.canonical
+  base_route: entity.vehicle.canonical
+  title: 'View'
+
+entity.vehicle.edit_form:
+  route_name: entity.vehicle.edit_form
+  base_route: entity.vehicle.canonical
+  title: 'Edit'
+
+entity.vehicle.delete_form:
+  route_name:  entity.vehicle.delete_form
+  base_route:  entity.vehicle.canonical
+  title: Delete
+  weight: 10
+
+# Reservation routing definition
+reservation.settings_tab:
+  route_name: reservation.settings
+  title: 'Settings'
+  base_route: reservation.settings
+
+entity.reservation.canonical:
+  route_name: entity.reservation.canonical
+  base_route: entity.reservation.canonical
+  title: 'View'
+
+entity.reservation.edit_form:
+  route_name: entity.reservation.edit_form
+  base_route: entity.reservation.canonical
+  title: 'Edit'
+
+entity.reservation.delete_form:
+  route_name:  entity.reservation.delete_form
+  base_route:  entity.reservation.canonical
+  title: Delete
+  weight: 10
+
+# Supplier routing definition
+supplier.settings_tab:
+  route_name: supplier.settings
+  title: 'Settings'
+  base_route: supplier.settings
+
+entity.supplier.canonical:
+  route_name: entity.supplier.canonical
+  base_route: entity.supplier.canonical
+  title: 'View'
+
+entity.supplier.edit_form:
+  route_name: entity.supplier.edit_form
+  base_route: entity.supplier.canonical
+  title: 'Edit'
+
+entity.supplier.delete_form:
+  route_name:  entity.supplier.delete_form
+  base_route:  entity.supplier.canonical
+  title: Delete
+  weight: 10
+

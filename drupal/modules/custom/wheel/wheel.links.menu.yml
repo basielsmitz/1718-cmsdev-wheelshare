@@ -1,0 +1,42 @@
+
+# Vehicle menu items definition
+entity.vehicle.collection:
+  title: 'Vehicle list'
+  route_name: entity.vehicle.collection
+  description: 'List Vehicle entities'
+  parent: system.admin_structure
+  weight: 100
+
+vehicle.admin.structure.settings:
+  title: 'Vehicle settings'
+  description: 'Configure Vehicle entities'
+  route_name: vehicle.settings
+  parent: system.admin_structure
+
+# Reservation menu items definition
+entity.reservation.collection:
+  title: 'Reservation list'
+  route_name: entity.reservation.collection
+  description: 'List Reservation entities'
+  parent: system.admin_structure
+  weight: 100
+
+reservation.admin.structure.settings:
+  title: 'Reservation settings'
+  description: 'Configure Reservation entities'
+  route_name: reservation.settings
+  parent: system.admin_structure
+
+# Supplier menu items definition
+entity.supplier.collection:
+  title: 'Supplier list'
+  route_name: entity.supplier.collection
+  description: 'List Supplier entities'
+  parent: system.admin_structure
+  weight: 100
+
+supplier.admin.structure.settings:
+  title: 'Supplier settings'
+  description: 'Configure Supplier entities'
+  route_name: supplier.settings
+  parent: system.admin_structure

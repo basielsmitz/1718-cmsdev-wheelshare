@@ -1,0 +1,52 @@
+input, select {
+  background-color: white;
+  font-family: $font-sub;
+}
+.filters {
+  margin-top: 2rem;
+  .row{
+    display: block;
+    width: 100%;
+    padding-bottom: 4rem;
+    .inputGroup{
+      display: inline-block;
+      //margin-right: 1.5rem;
+      label{
+        display: block;
+      }
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+    .left{
+      display: inline-block;
+      width: 48%;
+      float: left;
+      select {
+        width: 48%;
+      }
+    }
+    .right{
+      display: inline-block;
+      width: 48%;
+      float: right;
+      input{
+        width:100%;
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  body {
+    background-color: blue;
+  }}
+@media #{$mid} {
+  body {
+    background-color: green;
+  }}
+@media #{$large} {
+  body {
+    background-color: orange;
+  }}

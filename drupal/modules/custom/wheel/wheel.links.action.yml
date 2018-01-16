@@ -1,0 +1,15 @@
+entity.vehicle.add_form:
+  route_name: entity.vehicle.add_form
+  title: 'Add Vehicle'
+  appears_on:
+    - entity.vehicle.collection
+entity.reservation.add_form:
+  route_name: entity.reservation.add_form
+  title: 'Add Reservation'
+  appears_on:
+    - entity.reservation.collection
+entity.supplier.add_form:
+  route_name: entity.supplier.add_form
+  title: 'Add Supplier'
+  appears_on:
+    - entity.supplier.collection
