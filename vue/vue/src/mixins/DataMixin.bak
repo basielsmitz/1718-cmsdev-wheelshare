@@ -1,0 +1,85 @@
+import Vue from 'vue';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+import CookieMixin from '@/mixins/CookieMixin'
+
+Vue.use(VueAxios, axios);
+
+export default{
+  mixins: [CookieMixin],
+  data() {
+    return {
+      terms: null,
+      userdata: this.getCookie('userData'),
+      termsLoaded: false,
+    }
+  },
+  methods: {
+    getTermData(termName) {
+      const term = this.terms.find(term => {
+        return term.uuid[0].value === this.vehicle[termName][0].target_uuid
+      });
+      this.vehicle[termName] = {
+          value: term.name[0].value,
+          uuid: term.uuid[0].value,
+          id: term.tid[0].value,
+      }
+    },
+    getTaxonomyTerm(id, parentObject, loaded) {
+        let self = this;
+        axios.get('http://drupal.dd:8083/taxonomy/term/' + id + '?_format=json', self.config)
+            .then(response => {
+                self.vehicle[parentObject] = {
+                    value: response.data.name[0].value,
+                    id: id,
+                }
+                if (loaded) {
+                    self.taxonomiesLoaded = loaded;
+                }
+            })
+            .catch(e => {
+                this.errors.push(e)
+            })
+    },
+    getUserNameFromId(id, parentObject, loaded) {
+        axios.get('http://drupal.dd:8083/user/' + id + '?_format=json', {
+          headers: {
+            'Content-Type': 'application/hal+json',
+            'X-CSRF-Token': this.userdata.user.csrf_token,
+            'Authorization': 'Basic ' + this.userdata.auth,
+          }
+        })
+            .then(response => {
+                this.vehicle[parentObject] = {
+                    value: response.data.name[0].value,
+                    id: id,
+                    uuid: response.uuid[0].value,
+                }
+            })
+            .catch(e => {
+                console.log(e)
+            })
+    },
+    getsupplierInfo(id, parentObject, loaded) {
+        axios.get('http://drupal.dd:8083/wheel/supplier/' + id + '?_format=json', {
+          headers: {
+            'Content-Type': 'application/hal+json',
+            'X-CSRF-Token': this.userdata.user.csrf_token,
+            'Authorization': 'Basic ' + this.userdata.auth,
+          }
+        })
+            .then(response => {
+                this.vehicle[parentObject] = {
+                    value: response.data.name[0].value,
+                    id: id,
+                    uuid: response.data.uuid[0].value,
+                }
+            })
+            .catch(e => {
+                console.log(e)
+            })
+    },
+  },
+  mounted() {
+  }
+}

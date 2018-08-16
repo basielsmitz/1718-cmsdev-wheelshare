@@ -57,7 +57,7 @@
 
         li:first-of-type{
           border-top: 2px solid $primary;
-          margin-top: 10rem;
+          margin-top: 3rem;
         }
         li:hover {
           a {
@@ -71,6 +71,17 @@
     }
     .navActive {
       display: block;
+    }
+  }
+  .logoContainer {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 20%;
+    }
+    h1 {
+      display: block;
+      text-align: center;
     }
   }
 }

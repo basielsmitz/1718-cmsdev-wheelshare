@@ -48,8 +48,6 @@
                 axios.post('http://drupal.dd:8083/user/register?_format=hal_json', data, config)
                     .then(({data: response})=> {
                     console.log(response)
-
-
                 })
                     .catch(error => {console.error(error.message)});
             }
