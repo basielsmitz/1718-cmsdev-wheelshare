@@ -2,10 +2,32 @@
   text-align: center;
   h1 {
     color: $primary;
-    .inputGroup{
-      label {
-        display: block;width: 100%;
-      }
+    font-size: 26px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .inputGroup{
+    text-align: center;
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    button {
+      display: inline-block;
+      text-align: center;
+      padding: 10px;
+      background-color: $primary;
+      color: $white;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    input {
+    }
+  }
+  .logoContainer {
+    img {
+      width: 25%;
     }
   }
 

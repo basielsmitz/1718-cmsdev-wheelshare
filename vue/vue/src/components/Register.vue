@@ -1,6 +1,10 @@
 <template>
-    <div class="Login">
-        <h1>login</h1>
+    <div class="login">
+      <h1>Wheelshare</h1>
+      <h3>Registreer</h3>
+      <div class="logoContainer">
+        <img :src="logo" alt="logo">
+      </div>
         <div class="inputGroup">
             <label>name</label>
             <input type="text" name="name" id="name" v-model="name"><br>
@@ -8,7 +12,7 @@
             <input type="text" name="name" id="mail" v-model="mail"><br>
             <label>password</label>
             <input type="password" name="pass" id="pass" v-model="pass">
-            <button type="button" @click="login">login</button>
+            <br><button type="button" @click="login">registreer</button>
         </div>
     </div>
 </template>
@@ -17,6 +21,8 @@
     import Vue from 'vue'
     import axios from 'axios'
     import VueAxios from 'vue-axios'
+    import logo from "@/assets/logo01.png"
+
 
     Vue.use(VueAxios, axios)
     export default {
@@ -26,7 +32,8 @@
                 msg: 'Login',
                 name: '',
                 mail: '',
-                pass: ''
+                pass: '',
+                logo: logo,
             }
         },
         methods: {

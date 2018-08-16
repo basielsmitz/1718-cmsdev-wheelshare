@@ -1,16 +1,15 @@
 <template>
     <div class="login">
-        <h2>login</h2>
+      <h1>Wheelshare</h1>
         <div class="logoContainer">
           <img :src="logo" alt="logo">
-          <h1>Wheelshare</h1>
         </div>
         <div class="inputGroup">
             <label>name</label>
             <input type="text" name="name" id="name" v-model="name"><br>
             <label>password</label>
             <input type="password" name="pass" id="pass" v-model="pass">
-            <button type="button" @click="login">login</button>
+            <br><button type="button" @click="login">login</button>
             <!-- <button type="button" @click="postSomething">post</button> -->
         </div>
     </div>
